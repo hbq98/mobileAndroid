@@ -1,0 +1,394 @@
+/* 首页样式 */
+
+/* 版心 */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 头部样式开始 */
+.header {
+    height: 80px;
+    background-color: #fff;
+}
+
+.header .logo {
+    line-height: 80px;
+    float: left;
+}
+
+.header .logo .logo-text {
+    margin-left: 12px;
+}
+
+.header .nav {
+    float: right;
+    position: relative;
+}
+
+.header .nav ul {
+    float: left;
+}
+
+.header .nav li {
+    float: left;
+    line-height: 80px;
+}
+
+.header .nav li a {
+    padding-right: 46px;
+    font-size: 14px;
+    color: #07111b;
+    transition: color 0.5s;
+}
+
+.header .nav li a:hover {
+    color: #f01414;
+}
+
+.header .nav .btn-buy {
+    display: inline-block;
+    width: 90px;
+    background-color: #07111b;
+    border-radius: 3px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+}
+
+.header .nav .nav-line {
+    width: 28px;
+    height: 2px;
+    background-color: #f01400;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+}
+
+.header .nav .nav-active {
+    color: #f01400;
+}
+
+/* 头部样式结束 */
+
+/* 公共样式抽取 */
+.screen1,
+.screen2,
+.screen3,
+.screen4,
+.screen5 {
+    height: 800px;
+    overflow: hidden;
+}
+
+div[class*=screen] .container {
+    height: 100%;
+}
+
+.screen1 .screen1-title,
+.screen2 .screen2-title,
+.screen3 .screen3-title,
+.screen4 .screen4-title,
+.screen5 .screen5-title {
+    font-size: 42px;
+    text-align: center;
+}
+
+.screen2 .screen2-subtitle,
+.screen4 .screen4-subtitle,
+.screen5 .screen5-subtitle {
+    font-size: 15px;
+    text-align: center;
+}
+
+/* 屏幕1样式开始 */
+.screen1 {
+    width: 100%;
+    background-color: #e8e8e8;
+    position: relative;
+}
+
+.screen1 .screen1-title {
+    color: #4d555d;
+    padding-top: 155px;
+}
+
+.screen1 .screen1-title span {
+    color: #f01400;
+}
+
+.screen1 .screen1-phone {
+    display: block;
+    position: absolute;
+    bottom: 180px;
+    left: 50%;
+    margin-left: -687px;
+    z-index: 2;
+}
+
+.screen1 .screen1-shadow {
+    width: 1233px;
+    height: 411px;
+    background: url(../img/screen1-shadow.png) no-repeat;
+    position: absolute;
+    bottom: 30px;
+    margin-left: -616px;
+    left: 50%;
+
+    z-index: 1;
+}
+
+/* 屏幕1样式结束 */
+
+/* 屏幕2样式开始 */
+.screen2 {
+    background-color: #fafafa;
+    position: relative;
+}
+
+.screen2 .screen2-title {
+    padding-top: 96px;
+    color: #f01414;
+}
+
+.screen2 .screen2-subtitle {
+    margin-top: 36px;
+}
+
+.screen2 .screen2-wrap {
+    position: absolute;
+    top: 269px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.screen2 .screen2-wrap .screen2-line {
+    width: 207px;
+    height: 23px;
+    position: absolute;
+    line-height: 23px;
+    font-size: 22px;
+}
+
+.screen2 .screen2-wrap .screen2-line-left {
+    background: url(../img/screen2-line-left.png) no-repeat;
+    text-align: right;
+}
+
+.screen2 .screen2-wrap .screen2-line-right {
+    background: url(../img/screen2-line-right.png) no-repeat right;
+}
+
+.screen2 .screen2-wrap .screen2-line1 {
+    top: 30px;
+    right: 130px;
+}
+
+.screen2 .screen2-wrap .screen2-line2 {
+    top: 330px;
+    right: 30px;
+}
+
+.screen2 .screen2-wrap .screen2-line3 {
+    top: 150px;
+    left: -164px;
+}
+
+/* 屏幕2样式结束 */
+
+/* 屏幕3样式开始 */
+.screen3 {
+    background-color: #ba1316;
+    color: #fff;
+    overflow: hidden;
+}
+
+.screen3 .container {
+    position: relative;
+}
+
+.screen3 .screen3-title {
+    padding-top: 96px;
+    text-align: left;
+}
+
+.screen3 .screen3-subtitle {
+    padding-top: 36px;
+    text-align: left;
+}
+
+.screen3 .screen3-phone {
+    position: absolute;
+    top: 200px;
+    right: 0;
+}
+
+.screen3 .screen3-features {
+    width: 308px;
+    height: 264px;
+    position: absolute;
+    bottom: 139px;
+    left: 0;
+    text-align: center;
+}
+
+.screen3-feature-item {
+    width: 140px;
+    height: 120px;
+    float: left;
+    border: 1px solid #cb7173;
+    border-radius: 3px;
+    margin: 0 24px 24px 0;
+    transition: all 0.5s;
+}
+
+.screen3-feature-item:hover {
+    transform: scale(1.1);
+    border-color: #fff;
+}
+
+.screen3-feature-item:nth-child(2) {
+    margin: 0;
+}
+
+.screen3-feature-item:nth-child(4) {
+    margin: 0;
+}
+
+.screen3-feature-item-num {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 28px 0 8px;
+}
+
+.screen3-feature-item-desc {
+    font-size: 14px;
+}
+
+/* 屏幕3样式结束 */
+
+/* 屏幕4样式开始 */
+.screen4 {
+    background-color: #fff;
+    color: #07111b;
+}
+
+.screen4 .screen4-title {
+    padding-top: 137px;
+    color: #f01414;
+}
+
+.screen4 .screen4-subtitle {
+    padding-top: 35px;
+}
+
+.screen4 .screen4-type {
+    display: inline-block;
+    padding-top: 72px;
+}
+
+.screen4 .screen4-type .screen4-type-item {
+    float: left;
+    text-align: center;
+    margin-right: 40px;
+}
+
+.screen4 .screen4-type .screen4-type-item:last-child {
+    margin: 0;
+}
+
+.screen4 .screen4-type-item .screen4-type-color {
+    padding-top: 32px;
+}
+
+.screen4 .screen4-type-item .screen4-type-memory {
+    padding-top: 10px;
+    font-size: 12px;
+    color: #93999f;
+}
+
+/* 屏幕4样式结束 */
+
+/* 屏幕5样式开始 */
+.screen5 {
+    background-color: #d9dde1;
+}
+
+.screen5 .screen5-title {
+    color: #f01414;
+    padding-top: 135px;
+}
+
+.screen5 .screen5-subtitle {
+    padding-top: 36px;
+    font-size: 14px;
+}
+
+.screen5 .screen5-bg {
+    padding-top: 135px;
+}
+
+/* 屏幕5样式结束 */
+
+/* 立即购买和底部版权部分开始 */
+.buyNow {
+    height: 320px;
+    background: url(../img/bottom-bg.png) no-repeat;
+    overflow: hidden;
+}
+
+.buyNow a {
+    width: 240px;
+    background-color: #f01414;
+    border-radius: 4px;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    line-height: 80px;
+    display: block;
+    /* 左右margin 水平居中的条件 元素必须是块级元素 元素必须有宽度 */
+    margin: 120px auto;
+}
+
+.footer {
+    background-color: #07111b;
+    font-size: 12px;
+    text-align: center;
+    line-height: 80px;
+    color: #fff;
+}
+
+/* 立即购买和底部版权部分结束*/
+
+/* 侧边栏样式开始 */
+.sidebar {
+    position: fixed;
+    top: 350px;
+    right: 0;
+    z-index: 999;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+    padding: 8px 16px;
+    transition: all 1s;
+    transform: translateX(100%);
+}
+
+.sidebar a {
+    display: block;
+    font-size: 12px;
+    color: #93999f;
+    padding: 14px 0;
+    border-bottom: 1px solid #edf1f2;
+}
+
+.sidebar a:last-child {
+    border-bottom: none;
+}
+
+.sidebar .sidebar-active {
+    color: #f01400;
+}
+
+/* 侧边栏样式结束 */

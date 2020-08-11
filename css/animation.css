@@ -1,0 +1,250 @@
+/* 动画样式 */
+
+/* 头部样式开始 */
+.header-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+.header-fixed .logo-text,
+.header-fixed .nav li a {
+    color: #fff;
+}
+
+.nav-line {
+    transition: all 1s;
+}
+
+/* 头部样式结束 */
+
+/* 侧边栏样式开始 */
+.sidebar-show {
+    transform: none;
+}
+
+/* 侧边栏样式结束 */
+
+/* 屏幕1样式开始 */
+.screen1-title,
+.screen1-phone,
+.screen1-shadow {
+    transition: transform 1s;
+}
+
+.screen1-title-animation-init,
+.screen1-shadow-animation-init {
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.screen1-phone-animation-init {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+.screen1-title-animation-done,
+.screen1-shadow-animation-done,
+.screen1-phone-animation-done {
+    opacity: 1;
+}
+
+/* 屏幕1样式结束 */
+
+/* 屏幕2样式开始 */
+.screen2-title,
+.screen2-subtitle,
+.screen2-phone {
+    transition: transform 1s;
+}
+
+.screen2-title-animation-init {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+.screen2-subtitle-animation-init,
+.screen2-phone-animation-init {
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.screen2-title-animation-done,
+.screen2-subtitle-animation-done,
+.screen2-phone-animation-done {
+    opacity: 1;
+}
+
+.screen2-line {
+    transition: all 1s 1s;
+    position: relative;
+}
+
+.screen2-line1-animation-init,
+.screen2-line2-animation-init {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.screen2-line3-animation-init {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.screen2-line1-animation-done,
+.screen2-line2-animation-done,
+.screen2-line3-animation-done {
+    opacity: 1;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+}
+
+.screen2-line::before,
+.screen2-line::after {
+    content: ' ';
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    background-color: rgba(255, 0, 0, 0.4);
+    border-radius: 50%;
+    animation: bounce 2s infinite;
+}
+
+.screen2-line::before {
+    animation: bounce 2s infinite 1s;
+}
+
+.screen2-line3::before,
+.screen2-line3::after {
+    left: 186px;
+}
+
+/* 屏幕2样式结束 */
+
+/* 屏幕3样式开始 */
+.screen3-title,
+.screen3-subtitle,
+.screen3-features,
+.screen3-phone {
+    transition: transform 1s;
+}
+
+.screen3-title-animation-init {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+.screen3-subtitle-animation-init,
+.screen3-phone-animation-init {
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.screen3-features-animation-init {
+    transform: scale(0);
+    opacity: 0;
+}
+
+.screen3-title-animation-done,
+.screen3-subtitle-animation-done,
+.screen3-features-animation-done,
+.screen3-phone-animation-done {
+    opacity: 1;
+}
+
+/* 屏幕3样式结束 */
+
+/* 屏幕4样式开始 */
+.screen4-title,
+.screen4-subtitle {
+    transition: transform 1s;
+}
+
+
+.screen4-title-animation-init {
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+.screen4-subtitle-animation-init {
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+.screen4-title-animation-done,
+.screen4-subtitle-animation-done {
+    opacity: 1;
+}
+
+.screen4-type-item1 {
+    transition: opacity 1s 0.5s;
+}
+
+.screen4-type-item2 {
+    transition: opacity 1s 1s;
+}
+
+.screen4-type-item3 {
+    transition: opacity 1s 1.5s;
+}
+
+.screen4-type-item4 {
+    transition: opacity 1s 2s;
+}
+
+.screen4-type-item1-animation-init,
+.screen4-type-item2-animation-init,
+.screen4-type-item3-animation-init,
+.screen4-type-item4-animation-init {
+    opacity: 0;
+}
+
+.screen4-type-item1-animation-done,
+.screen4-type-item2-animation-done,
+.screen4-type-item3-animation-done,
+.screen4-type-item4-animation-done {
+    opacity: 1;
+}
+
+/* 屏幕4样式结束 */
+
+/* 屏幕5样式开始 */
+.screen5-title,
+.screen5-subtitle,
+.screen5-bg {
+    transition: transform 1s;
+}
+
+.screen5-title-animation-init {
+    transform: translateY(-100%);
+}
+
+.screen5-subtitle-animation-init,
+.screen5-bg-animation-init {
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.screen5-title-animation-done,
+.screen5-subtitle-animation-done,
+.screen5-bg-animation-done {
+    opacity: 1;
+}
+
+/* 屏幕5样式结束 */
